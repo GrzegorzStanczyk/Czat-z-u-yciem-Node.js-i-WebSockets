@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <style>
+    body {
+        box-sizing: border-box;
+    }
+        .chat {
+            width: 500px;
+            margin: 200px auto;
+            border: 1px solid gray;
+            border-radius: 5%;
+            padding: 40px;
+        }
+        .chatWindow {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="chat" class="chat">
+        <div class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" id="yourName" placeholder="Podaj swoje imię">
+            </div>
+            <button class="btn btn-primary" id="join">Dołącz</button>
+        </div>
+        <hr>
+        <div id="chatWindow" class="chatWindow">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" rows="3" id="message" placeholder="Wiadomość..."></textarea>
+        </div>
+        <button class="btn btn-primary pull-right" id="submit" disabled>Wyślij</button>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
